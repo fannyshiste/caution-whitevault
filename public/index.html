@@ -32,7 +32,7 @@
     document.getElementById('montant-texte').textContent =
       `Autorisation de caution : ${(montant / 100).toFixed(2)} € — aucun débit immédiat`;
 
-    const stripe = Stripe('pk_test_51TdrreBExSFNEGhhU0Az4izP4M3Bo2XMiZ2Gj20JceQJy7QJ4yNRU1QAnRTT3Rl7uVss1G5mY5UGX5bKNziJtMR300v30FmU7M');
+    const stripe = Stripe('pk_live_51TR8upI13EivEaEd8tOcgAPSsgV08D7XZoRiIJ5TpddV7qNQFxJvhBp6PsReJYr52DTrF8gwGDD6fSgG99DV4V8S00qNIm08BO');
     const elements = stripe.elements();
     const card = elements.create('card');
     card.mount('#card-element');
